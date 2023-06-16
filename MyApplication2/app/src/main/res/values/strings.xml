@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Application2</string>
+    <string name="my_text1">이것은 소리없는 아우성!</string>
 </resources>

@@ -1,0 +1,17 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:orientation="horizontal">
+
+    <Button android:text="A" />
+
+    <Button android:text="B" />
+
+    <Button android:text="C" />
+
+    <Button android:text="D" />
+
+    <Button android:text="E" />
+
+</GridLayout>
