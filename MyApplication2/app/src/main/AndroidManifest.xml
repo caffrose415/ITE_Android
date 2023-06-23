@@ -5,6 +5,9 @@
     <uses-permission android:name="com.example.permission.TEST_PERMISSION" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +21,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ANRActivity"
+            android:name=".ContactActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,16 +30,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SecondActivity"
+            android:name=".GalleryActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".DialActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".GeoActivity"
+            android:exported="true" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".BReceiverActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ANRActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="true" />
         <activity
             android:name=".FirstActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MovieActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".RecyclerViewActivity"
             android:exported="true" />
