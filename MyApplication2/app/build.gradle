@@ -51,4 +51,6 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+
+    implementation group: 'androidx.viewpager2', name: 'viewpager2', version: '1.0.0'
 }
